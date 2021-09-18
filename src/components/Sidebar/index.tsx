@@ -12,7 +12,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { Audiotrack } from "@material-ui/icons";
 import PersonIcon from "@material-ui/icons/Person";
 import { Button } from "@material-ui/core";
-import { useAppDispatch } from "../../lib/hooks";
+import { useAppDispatch } from "../../lib/hooks/reduxHooks";
 import { resetStore } from "../../spotify/reducer";
 import { ITheme } from "../../lib/types";
 import { NavLink } from "react-router-dom";

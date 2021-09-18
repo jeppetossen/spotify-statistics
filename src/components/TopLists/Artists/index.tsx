@@ -5,7 +5,7 @@ import { selectLimit } from "../../MainView/Controls/LimitSlider/reducer";
 import { selectOffset } from "../../MainView/Controls/OffsetSlider/reducer";
 import MainView from "../../MainView";
 import TopList from "../common";
-import { useAppSelector } from "../../../lib/hooks";
+import { useAppSelector } from "../../../lib/hooks/reduxHooks";
 import { selectTimeRange } from "../../MainView/Controls/TimeRange/reducer";
 
 const useStyles = makeStyles((theme: Theme) =>

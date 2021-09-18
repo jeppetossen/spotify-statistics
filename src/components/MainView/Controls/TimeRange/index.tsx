@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, InputLabel, makeStyles, MenuItem, Select } from "@material-ui/core";
 import { selectTimeRange, setTimeRange } from "./reducer";
-import { useAppDispatch, useAppSelector } from "../../../../lib/hooks";
+import { useAppDispatch, useAppSelector } from "../../../../lib/hooks/reduxHooks";
 
 const useStyles = makeStyles({
   gridItem: {

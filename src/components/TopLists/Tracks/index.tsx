@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
-import { useAppSelector } from "../../../lib/hooks";
+import { useAppSelector } from "../../../lib/hooks/reduxHooks";
 import { getTopTracks } from "../../../spotify/spotify";
 import { selectTimeRange } from "../../MainView/Controls/TimeRange/reducer";
 import MainView from "../../MainView";

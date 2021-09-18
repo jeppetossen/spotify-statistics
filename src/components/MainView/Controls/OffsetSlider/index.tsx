@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useState } from "react";
 import { Grid, makeStyles, Slider, Typography } from "@material-ui/core";
-import { useAppDispatch } from "../../../../lib/hooks";
+import { useAppDispatch } from "../../../../lib/hooks/reduxHooks";
 import { setOffset } from "./reducer";
 
 const useStyles = makeStyles({
