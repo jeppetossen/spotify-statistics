@@ -2,6 +2,7 @@ import Cookies from "js-cookie";
 
 import urls from "../utils/urls";
 import SpotifyWebApi from "spotify-web-api-js";
+import { ICookieOptions } from "../lib/types";
 
 
 const spotify = new SpotifyWebApi();
@@ -35,7 +36,7 @@ const commonFetch = async (endpoint: string) => {
 };
 
 const minimizedTracksData = (data: Array<any>) => {
-  return data.map((value: any, index: number) => {
+  return data.map((value: any) => {
     let obj: any = {};
 
     obj["image"] = value.album.images.at(-1);
@@ -58,7 +59,7 @@ const minimizedTracksData = (data: Array<any>) => {
 };
 
 const minimizedArtistsData = (data: Array<any>) => {
-  return data.map((value: any, index: number) => {
+  return data.map((value: any) => {
     let obj: any = {};
 
     obj["image"] = value.images.at(-1);
@@ -127,12 +128,10 @@ const saveAccessToken = (token: string): void => {
     removeCookie();
   }
 
-  // TODO: Type is 'any' because TS complains about sameSite type does not match
-  // type "Strict" but it does not give any error when inline for some reason
   const expireInOneHour = new Date(new Date().getTime() + 60 * 60 * 1000);
-  let options: any = {
+  let options: ICookieOptions = {
     expires: expireInOneHour,
-    sameSite: 'strict'
+    sameSite: "strict"
   };
 
   Cookies.set("accessToken", token, options);

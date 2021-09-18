@@ -34,3 +34,8 @@ export interface ITheme extends Theme {
 export interface IThemeOptions extends ThemeOptions {
   palette: IPalette;
 }
+
+export interface ICookieOptions {
+  expires: number | Date | undefined;
+  sameSite: "strict" | "Strict" | "lax" | "Lax" | "none" | "None" | undefined;
+}
