@@ -1,13 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
-const initialState = {
-  accessToken: '' as string,
-};
-
 const logout = createSlice({
   name: "logout",
-  initialState: initialState,
+  initialState: '',
   reducers: {
     resetStore: state => {}
   },
