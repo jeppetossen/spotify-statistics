@@ -4,7 +4,7 @@ const logout = createSlice({
   name: "logout",
   initialState: '',
   reducers: {
-    resetStore: state => {}
+    resetStore: () => {}
   },
 });
 
