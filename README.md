@@ -6,6 +6,12 @@ and [redux](https://redux-toolkit.js.org/).
 The app uses the [Implicit Grant Flow](https://developer.spotify.com/documentation/general/guides/authorization-guide/#implicit-grant-flow)
 authorization flow provided by the api.
 
+The stack used is as follows:
+* [React](https://reactjs.org/)
+* [Material-UI](https://v4.mui.com/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Redux Toolkit](https://redux-toolkit.js.org/)
+
 ## Features
 
 An authenticated user may look up their top tracks or artists with the help of 3 separate controls.
